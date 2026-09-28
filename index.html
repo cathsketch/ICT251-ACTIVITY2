@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catherine Lengwe - Personal Web Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Catherine Lengwe</h1>
+        <p>Student ID: 202512803 | ICT251 Web Technologies</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#learning">Learning Plan</a>
+        <a href="#photos">Photos</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+        <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- About Me Section -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is Catherine Lengwe, a second-year student pursuing a degree in the School of Engineering and Technology at Mulungushi University. I have a deep passion for computer science and emerging digital tools. Through the ICT251 Web Technologies module, I aim to master modern web architecture, dynamic client-side scripting, and responsive web design to build functional digital solutions.
+            </p>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <p>Here are my top three favorite pastimes that keep me engaged outside of academics:</p>
+            <ul>
+                <li>Coding & Web Development</li>
+                <li>Reading</li>
+                <li>Listening to Music</li>
+            </ul>
+        </section>
+
+        <!-- Learning Plan Section -->
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+            <p>To continuously enhance my practical web development capabilities, I am following these steps:</p>
+            <ol>
+                <li>Practice HTML5, CSS3, and JavaScript layout techniques daily through hands-on exercises.</li>
+                <li>Build small personal projects and deploy them to GitHub to track my progress.</li>
+                <li>Study documentation on modern CSS frameworks and browser debugging workflows.</li>
+            </ol>
+
+            <h3>Weekly Study Schedule</h3>
+            <table>
+                <caption>Weekly Web Learning Plan</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML5 Semantic Elements & Structure</td>
+                        <td>Build page structure using header, nav, main, section, and footer tags.</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Box Model & Responsive Layouts</td>
+                        <td>Apply flexbox styling, custom margins, padding, and media queries.</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Media Integration & Accessibility</td>
+                        <td>Embed html audio/video players and create structured user forms.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <p>A short visual showcase of my learning journey and study environment.</p>
+            <div class="gallery">
+                <figure>
+                    <img src="images/photo1.jpg" alt="Catherine working at her desk with web development code visible on screen">
+                    <figcaption>Going for a lecture for ict251.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" alt="University lecture hall with students attending a technical presentation">
+                    <figcaption>Attending group discussion. </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" alt="A notebook showing handwritten notes on CSS box model properties">
+                    <figcaption>After attending the lecture for Mr Kaluba.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            
+            <article class="media-item">
+                <h3>Video Self-Introduction</h3>
+                <video controls>
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><strong>Video Summary:</strong> Hi! I'm Catherine Lengwe, a student in ICT251 Web Technologies at Mulungushi University. In this short video, I introduce my academic goals and share my commitment to mastering CSS layouts and responsive web design this semester.</p>
+            </article>
+
+            <article class="media-item">
+                <h3>Audio Clip - Why I Study Web Technologies</h3>
+                <audio controls>
+                    <source src="videos/voice.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p><strong>Audio Summary:</strong> In this short recording, I explain how web development allows me to blend creative design with technical problem-solving.</p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out using the form below. <em>(Note: This form is a browser demonstration and does not submit data online.)</em></p>
+            
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Catherine Lengwe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="student@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General Inquiry</option>
+                        <option value="assignment">Assignment Feedback</option>
+                        <option value="collaboration">Project Collaboration</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Catherine Lengwe | Student ID: 202512803 | Mulungushi University</p>
+    </footer>
+
+</body>
+</html>
