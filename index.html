@@ -1,175 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catherine Lengwe - Personal Web Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catherine Lengwe - ICT251 Student Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Catherine Lengwe</h1>
-        <p>Student ID: 202512803 | ICT251 Web Technologies</p>
-    </header>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <h1>Catherine Lengwe | Portfolio</h1>
+      <button id="menu-toggle-btn" class="menu-toggle" aria-label="Toggle navigation">Menu ☰</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#learning">Learning Plan</a></li>
+          <li><a href="#projects">Projects & Skills</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#calculator">Study Calculator</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark Mode</button>
+    </div>
+  </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#learning">Learning Plan</a>
-        <a href="#photos">Photos</a>
-        <a href="#media">Media</a>
-        <a href="#contact">Contact</a>
-        <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
-    </nav>
+  <main>
+    <!-- Hero / Introductory Area -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h2>Welcome to My Academic Portfolio</h2>
+        <p><strong>Name:</strong> Catherine Lengwe | <strong>Student ID:</strong> 202512803</p>
+        <p><strong>Programme:</strong> School of Engineering and Technology, Mulungushi University</p>
+        <p>Welcome to my interactive web portfolio built for ICT251 Web Technologies. Explore my projects, learning goals, and interactive JavaScript tools below!</p>
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+    </section>
 
-    <!-- Main Content Area -->
-    <main>
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My name is Catherine Lengwe (Student No. 202512803), a dedicated student at Mulungushi University in the School of Engineering and Technology. I am deeply interested in web technologies, software development, and computing ethics. My goal is to build accessible, secure, and user-friendly software applications that address real-world challenges in Zambia. Outside of academic lectures, I enjoy collaborating in study groups, exploring responsive design frameworks, and practicing coding algorithms.</p>
+    </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="content-section">
-            <h2>About Me</h2>
-            <p>
-                My name is Catherine Lengwe, a second-year student pursuing a degree in the School of Engineering and Technology at Mulungushi University. I have a deep passion for computer science and emerging digital tools. Through the ICT251 Web Technologies module, I aim to master modern web architecture, dynamic client-side scripting, and responsive web design to build functional digital solutions.
-            </p>
-        </section>
+    <!-- My Hobbies Section -->
+    <section id="hobbies">
+      <h2>My Hobbies</h2>
+      <ul class="hobbies-list">
+        <li><strong>Web Development & Design:</strong> Experimenting with modern CSS styling, interactive scripts, and responsive website layouts.</li>
+        <li><strong>Tech Reading:</strong> Studying articles on computer ethics, information security principles, and open-source innovations.</li>
+        <li><strong>Badminton & Fitness:</strong> Playing casual sports on campus to maintain a healthy study-life balance.</li>
+      </ul>
+    </section>
 
-        <!-- Hobbies Section -->
-        <section id="hobbies" class="content-section">
-            <h2>My Hobbies</h2>
-            <p>Here are my top three favorite pastimes that keep me engaged outside of academics:</p>
-            <ul>
-                <li>Coding & Web Development</li>
-                <li>Reading</li>
-                <li>Listening to Music</li>
-            </ul>
-        </section>
+    <!-- My Learning Plan Section -->
+    <section id="learning">
+      <h2>My Learning Plan</h2>
+      <ol class="learning-steps">
+        <li>Master front-end development through semantic HTML5 structure, modular CSS, and responsive layouts.</li>
+        <li>Develop interactive client-side web applications using modern JavaScript routines and DOM manipulation.</li>
+        <li>Gain proficiency in continuous delivery and deployment pipelines using GitHub version control and Render cloud hosting.</li>
+      </ol>
 
-        <!-- Learning Plan Section -->
-        <section id="learning" class="content-section">
-            <h2>My Learning Plan</h2>
-            <p>To continuously enhance my practical web development capabilities, I am following these steps:</p>
-            <ol>
-                <li>Practice HTML5, CSS3, and JavaScript layout techniques daily through hands-on exercises.</li>
-                <li>Build small personal projects and deploy them to GitHub to track my progress.</li>
-                <li>Study documentation on modern CSS frameworks and browser debugging workflows.</li>
-            </ol>
+      <h3>Semester Learning Schedule</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Course / Topic</th>
+              <th>Target Milestone</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ICT251 Web Technologies</td>
+              <td>Complete Activity 3 Deployment</td>
+              <td>In Progress</td>
+            </tr>
+            <tr>
+              <td>Information Security Concepts</td>
+              <td>Understand CIA Triad Principles</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>Database Management Systems</td>
+              <td>Design Relational Database Schema</td>
+              <td>Scheduled</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-            <h3>Weekly Study Schedule</h3>
-            <table>
-                <caption>Weekly Web Learning Plan</caption>
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Topic</th>
-                        <th>Practice Task</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday</td>
-                        <td>HTML5 Semantic Elements & Structure</td>
-                        <td>Build page structure using header, nav, main, section, and footer tags.</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>CSS Box Model & Responsive Layouts</td>
-                        <td>Apply flexbox styling, custom margins, padding, and media queries.</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>Media Integration & Accessibility</td>
-                        <td>Embed html audio/video players and create structured user forms.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <!-- Projects / Skills Section -->
+    <section id="projects">
+      <h2>Projects & Skills</h2>
+      <div class="filter-container">
+        <input type="text" id="project-search" placeholder="Search projects or skills...">
+        <button id="reset-filter-btn" class="btn-secondary">Reset</button>
+      </div>
+      <p id="no-projects-msg" class="hidden-msg">No matching projects or skills found.</p>
 
-        <!-- Photo Gallery Section -->
-        <section id="photos" class="content-section">
-            <h2>My Photos</h2>
-            <p>A short visual showcase of my learning journey and study environment.</p>
-            <div class="gallery">
-                <figure>
-                    <img src="images/photo1.jpg" alt="Catherine working at her desk with web development code visible on screen">
-                    <figcaption>Going for a lecture for ict251.</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/photo2.jpg" alt="University lecture hall with students attending a technical presentation">
-                    <figcaption>Attending group discussion. </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/photo3.jpg" alt="A notebook showing handwritten notes on CSS box model properties">
-                    <figcaption>After attending the lecture for Mr Kaluba.</figcaption>
-                </figure>
-            </div>
-        </section>
+      <div class="projects-grid" id="projects-list">
+        <article class="project-card" data-category="web HTML CSS JavaScript">
+          <h3>Interactive Student Portfolio</h3>
+          <p>A responsive, interactive web application built with HTML5, CSS Flexbox/Grid, and vanilla JS for ICT251.</p>
+        </article>
+        <article class="project-card" data-category="security ethics computer">
+          <h3>Computer Ethics & CIA Triad Guide</h3>
+          <p>An educational overview highlighting the Ten Commandments of Computer Ethics and information security essentials.</p>
+        </article>
+        <article class="project-card" data-category="office word excel powerpoint">
+          <h3>Productivity Software Mastery</h3>
+          <p>Practical expertise in document styling, Microsoft Excel data formulas, and dynamic PowerPoint presentations.</p>
+        </article>
+      </div>
+    </section>
 
-        <!-- Media Section -->
-        <section id="media" class="content-section">
-            <h2>My Media</h2>
-            
-            <article class="media-item">
-                <h3>Video Self-Introduction</h3>
-                <video controls>
-                    <source src="videos/intro.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p><strong>Video Summary:</strong> Hi! I'm Catherine Lengwe, a student in ICT251 Web Technologies at Mulungushi University. In this short video, I introduce my academic goals and share my commitment to mastering CSS layouts and responsive web design this semester.</p>
-            </article>
+    <!-- My Photos Section -->
+    <section id="photos">
+      <h2>My Photos</h2>
+      <div class="gallery-container">
+        <figure class="gallery-card">
+          <img id="gallery-img" src="images/photo1.jpg" alt="Mulungushi University campus view">
+          <figcaption id="gallery-caption">Mulungushi University Main Campus View</figcaption>
+        </figure>
+        <div class="gallery-controls">
+          <button id="prev-photo-btn" class="btn-secondary">Previous</button>
+          <button id="next-photo-btn" class="btn-secondary">Next</button>
+        </div>
+      </div>
+    </section>
 
-            <article class="media-item">
-                <h3>Audio Clip - Why I Study Web Technologies</h3>
-                <audio controls>
-                    <source src="videos/voice.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                <p><strong>Audio Summary:</strong> In this short recording, I explain how web development allows me to blend creative design with technical problem-solving.</p>
-            </article>
-        </section>
+    <!-- My Media Section -->
+    <section id="media">
+      <h2>My Media</h2>
+      <div class="media-container">
+        <div class="media-item">
+          <h3>Sample Video Presentation</h3>
+          <video controls width="100%">
+            <source src="videos/sample_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="media-summary"><strong>Summary:</strong> A short clip illustrating web page structure and responsive site layout testing.</p>
+        </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="content-section">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out using the form below. <em>(Note: This form is a browser demonstration and does not submit data online.)</em></p>
-            
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required placeholder="Catherine Lengwe">
-                </div>
+        <div class="media-item">
+          <h3>Sample Audio Note</h3>
+          <audio controls>
+            <source src="videos/sample_audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <p class="media-summary"><strong>Summary:</strong> An introductory audio recording highlighting goals for the ICT251 Web Technologies course.</p>
+        </div>
+      </div>
+    </section>
 
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required placeholder="student@example.com">
-                </div>
+    <!-- Interactive JS Feature: Study Hours Calculator -->
+    <section id="calculator">
+      <h2>Study Hours Calculator</h2>
+      <p>Plan your study routine by entering your daily study targets below:</p>
+      <form id="calc-form" class="styled-form">
+        <div class="form-group">
+          <label for="hours-per-day">Planned Hours Per Day:</label>
+          <input type="number" id="hours-per-day" min="0" step="0.5" placeholder="e.g., 3">
+        </div>
+        <div class="form-group">
+          <label for="days-per-week">Days Per Week (1 to 7):</label>
+          <input type="number" id="days-per-week" min="1" max="7" placeholder="e.g., 5">
+        </div>
+        <button type="submit" class="btn">Calculate Total Hours</button>
+      </form>
+      <div id="calc-result" class="result-box" aria-live="polite"></div>
+    </section>
 
-                <div class="form-group">
-                    <label for="topic">Topic:</label>
-                    <select id="topic" name="topic">
-                        <option value="general">General Inquiry</option>
-                        <option value="assignment">Assignment Feedback</option>
-                        <option value="collaboration">Project Collaboration</option>
-                    </select>
-                </div>
+    <!-- Contact Section with Validation & Preview -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p><em>Browser demonstration only — no message is sent to a server.</em></p>
+      
+      <form id="contact-form" class="styled-form" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Full Name: <span class="required">*</span></label>
+          <input type="text" id="contact-name" name="name" required>
+          <small class="error-msg" id="name-error"></small>
+        </div>
 
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
-                </div>
+        <div class="form-group">
+          <label for="contact-email">Email Address: <span class="required">*</span></label>
+          <input type="email" id="contact-email" name="email" required>
+          <small class="error-msg" id="email-error"></small>
+        </div>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+        <div class="form-group">
+          <label for="contact-message">Message: <span class="required">*</span></label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+          <small class="error-msg" id="message-error"></small>
+        </div>
 
-    </main>
+        <button type="submit" class="btn">Submit Demonstration</button>
+      </form>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2026 Catherine Lengwe | Student ID: 202512803 | Mulungushi University</p>
-    </footer>
+      <!-- Preview container for local submission output -->
+      <div id="contact-preview" class="preview-card hidden" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Catherine Lengwe (202512803) | ICT251 Web Technologies | Mulungushi University</p>
+      <p><a href="https://github.com/catherine-lengwe/ict251-activity3" target="_blank" rel="noopener noreferrer">View Source on GitHub</a></p>
+    </div>
+  </footer>
 
 </body>
 </html>
