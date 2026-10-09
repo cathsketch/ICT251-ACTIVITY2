@@ -46,7 +46,7 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: #86b1ea;
     text-decoration: none;
     font-weight: 600;
     padding: 6px 12px;
@@ -68,7 +68,7 @@ main {
 
 /* Class Selector requirement */
 .content-section {
-    background-color: #ffffff;
+    background-color: #ededf0;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border: 1px solid var(--border-color);
